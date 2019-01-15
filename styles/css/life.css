@@ -1,0 +1,215 @@
+a{
+    text-decoration:none;
+}
+p,div{
+    color: #4A4A4A;
+}
+ul,li{
+    margin:0;
+    padding:0;
+}
+li {
+    list-style:none;
+}
+.tsm_life_header{
+    width: 100%;
+    display: inline-block;
+}
+.tsm_life_logo{
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.tsm_life_title{
+    font-size: 15px;
+    color: #4A4A4A;
+    margin-top: 20px;
+}
+.tsm_life_detail{
+    font-size: 12px;
+    color: #9B9B9B;
+    margin-top: -10px;
+}
+.tsm_life_left{
+    margin-left: 15px;
+    float: left;
+}
+.tsm_life_account{
+
+}
+.tsm_life_account_left{
+    float: left;
+    margin-left: 10px;
+}
+.tsm_life_account_right{
+    float: right;
+    margin-right: 10px;
+}
+.tsm_life_account_phone{
+    margin-top: 30px;
+}
+.tsm_life_hr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tsm_life_rdc{
+    margin-left: 10px;
+}
+.tsm_life_btn{
+    margin-left: 10px;
+    color: #72A2E0;
+    font-size: 15px;
+}
+.tsm_life_order_order_icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.tsm_life_order_header{
+    background-color: #EFEFEF;
+}
+.tsm_order_detail_sum{
+    margin-top: 17px;
+    margin-left: 10px;
+}
+.tsm_life_order_header_title{
+    color: #9B9B9B;
+    font-size: 15px;
+}
+.tsm_life_order_count{
+    margin-bottom: 17px;
+}
+.tsm_life_order_goods_img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+.tsm_life_order_order_account{
+    margin-top: 20px;
+    color: #4A4A4A;
+    font-size: 15px;
+}
+.tsm_life_order_order_detail{
+    margin-top: 15px;
+    color: #4A4A4A;
+    font-size: 12px;
+}
+.tsm_life_orders_li{
+
+}
+.tsm_life_orders_total{
+    color: #D1091B;
+    font-size: 15px;
+}
+.tsm_life_orders_btn{
+    color: #72A2E0;
+    font-size: 15px;
+    float: right;
+}
+.tsm_life_orders_count{
+    color: #4A4A4A;
+    font-size: 12px;
+}
+.tsm_life_orders_time{
+    color: #9B9B9B;
+    font-size: 12px;
+}
+.tsm_life_order_body{
+    background-color: #EFEFF4;
+    padding: 0px;
+    margin: 0px;
+}
+.tsm_life_order_dev{
+    margin-top: 10px;
+    background-color: white;
+}
+.tsm_life_order_goods_detail{
+    color: #4A4A4A;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tsm_life_order_hr{
+    margin-left: 15px;
+}
+.tsm_life_order_item_dev{
+    padding: 0px;
+    width: 100%;
+}
+.tsm_life_order_item{
+
+}
+.tsm_life_order_item_name{
+
+}
+.tsm_life_order_item_price{
+    float: right;
+}
+.tsm_life_order_item_num{
+    margin-right: 15px;
+    float: right;
+}
+.tsm_life_order_second{
+    margin-top: 10px;
+}
+.tsm_life_order_pay_way{
+    float: right;
+    margin-right: 15px;
+}
+.tsm_life_order_amount{
+    color: #FD8B36;
+    font-size: 15px;
+}
+.tsm_life_order_order_d{
+    padding: 10px 15px 10px 15px;
+}
+.tsm_life_order_time{
+    margin-top: 10px;
+}
+.tsm_life_good_header{
+    background-color: white;
+    text-align: center;
+}
+.tsm_life_good_name{
+    color: #4A4A4A;
+    font-size: 15px;
+}
+.tsm_life_good_img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tsm_life_good_price{
+    color: #FF9527;
+    font-size: 12px;
+}
+.tsm_life_order_good_detail_title{
+    color: #4A4A4A;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.tsm_life_good_detail{
+    padding: 10px 15px 10px 15px;
+}
+.tsm_life_good_remark{
+    margin-top: 5px;
+}
+.tsm_life_order_pay{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>智慧消防管理平台</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="">
+		<meta http-equiv="description" content="">
+
+		<script type="text/javascript" src="extjs-4.1.1/ext-all.js"></script>
+		<script type="text/javascript" src="extjs-4.1.1/locale/ext-lang-zh_CN.js"></script>
+		<script type="text/javascript" src="js/common/constant.js"></script>
+		<script type="text/javascript" src="js/common/commonFunc.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript">
+			var userName = Ext.util.Cookies.get("userName");
+						var operatorName = '智慧消防管理平台';
+			
+			var userType = Ext.util.Cookies.get("userType");
+			var isSysUser = false;	// 是否是系统用户
+			if (userType == TSMINFO_SYS_USER_TYPE){
+				isSysUser = true;
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="extjs-4.1.1/resources/css/ext-all-gray.css" />
+		<link rel="stylesheet" type="text/css" href="styles/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="styles/css/tsminfo.css">
+		<!-- 
+			<link rel="stylesheet" type="text/css" href="extjs-4.1.1/resources/css/ext-neptune.css" />
+		 -->	 
+	</head>
+
+	<body>
+		<div id="loading"
+			class="x-mask-msg x-mask-loading x-mask-loading-two"
+			style="left: 45%; top: 40%;">
+			<div>
+				加载中...
+			</div>
+		</div>
+	</body>
+</html>
