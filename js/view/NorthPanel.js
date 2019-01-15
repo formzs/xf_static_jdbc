@@ -13,5 +13,5 @@ Ext.define('TSMINFO.view.NorthPanel', {
 
 	html : '<div class="header"><div class="header-title">' + operatorName + '</div><div class="logininfo">欢迎您：<span>'
 			 +  userName
-			+ ' | </span><a href="javascript:void(0)" onclick="TsmFunc.updPassword();">修改密码</a> | <a href="system/logout">退出</a></div></div>'
+			+ ' | </span><a href="javascript:void(0)" onclick="TsmFunc.updPassword();">修改密码</a> | <a href="/api/system/logout">退出</a></div></div>'
 });
