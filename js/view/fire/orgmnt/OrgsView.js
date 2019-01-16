@@ -380,6 +380,7 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
         });
         return this.grid;
     },
+
     createWindow: function (cfg) {
         var form = Ext.create('Ext.form.Panel', {
             border: false,
@@ -493,15 +494,16 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
                 fieldLabel: "创建时间",
                 allowBlank: true
             }]
-        })
+        });
+        var baiduMap = Ext.create('nanjingMap');
         var win = Ext.create('Ext.Window', {
             title: cfg.title,
-            width: 460,
+            width: 1200,
             modal: true,
-            layout: 'fit',
+            layout: { type: 'hbox'},
             buttons: [{
                 text: '确定',
-                handler: function () {
+                    handler: function () {
                     cfg.callback.call(this, form, win)
                 },
                 scope: this
@@ -511,10 +513,11 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
                     win.close();
                 }
             }],
-            items: [form]
+            items: [form, baiduMap]
         })
         return win;
     },
+
     addWin: function () {
         var win = this.createWindow({
             title: '新增单位管理',
