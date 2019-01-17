@@ -22,7 +22,7 @@ Ext.define('Ext.ux.BMapPanel', {
         }
 
         if (this.bmapType === 'map') {
-            this.bmap.centerAndZoom(this.centerCity, this.zoomLevel); //设置初始化中心点
+            this.bmap.centerAndZoom(new BMap.Point(this.initPoint[0],this.initPoint[1]), this.zoomLevel); //设置初始化中心点
         }
 
         this.onMapReady(); //地图加载项
@@ -31,6 +31,7 @@ Ext.define('Ext.ux.BMapPanel', {
         this.addMapConfigs(); //添加地图属性
         this.addMapControls(); //添加地图控件
         this.addMapMarkers(this.markers); //添加标记
+        this.addMapStyle(this.mapStyle);
     },
     getMap: function () {
         return this.bmap;
@@ -54,7 +55,6 @@ Ext.define('Ext.ux.BMapPanel', {
         this.getMap().addOverlay(markerBase); //标记覆盖入地图
     },
     addMapControls: function () {
-        debugger
         if (Ext.isArray(this.mapControls)) {
             for (var i = 0; i < this.mapControls.length; i++) {
                 this.addMapControl(this.mapControls[i]);
@@ -62,7 +62,6 @@ Ext.define('Ext.ux.BMapPanel', {
         }
     },
     addMapControl: function (controlParam) {
-        debugger
         var controlBase = new BMap[controlParam.controlName](controlParam);
         this.getMap().addControl(controlBase);
     },
@@ -78,5 +77,8 @@ Ext.define('Ext.ux.BMapPanel', {
     },
     addMapConfig: function (configParam) {
         this.getMap()[configParam]();
+    },
+    addMapStyle: function (mapStyle) {
+        this.getMap().setMapStyle({styleJson:mapStyle});
     }
 });

@@ -50,34 +50,34 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
                     fieldLabel: "部门名称"
 
                 }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'location',
-            //        fieldLabel: "部门地址"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'telephone',
-            //        fieldLabel: "部门电话"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'staffnum',
-            //        fieldLabel: "员工数量"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'corporation',
-            //        fieldLabel: "法人代表名称"
-            //
-            //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'location',
+                //        fieldLabel: "部门地址"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'telephone',
+                //        fieldLabel: "部门电话"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'staffnum',
+                //        fieldLabel: "员工数量"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'corporation',
+                //        fieldLabel: "法人代表名称"
+                //
+                //    }]
             }, {
                 items: [{
                     xtype: 'textfield',
@@ -85,68 +85,68 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
                     fieldLabel: "单位性质"
 
                 }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'firemenName',
-            //        fieldLabel: "消防负责人名称"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'firemenTel',
-            //        fieldLabel: "消防负责人电话"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'combobox',
-            //        name: 'status',
-            //        fieldLabel: "状态",
-            //        hiddenName: 'status',
-            //        editable: false,
-            //        forceSelection: false,
-            //        store: Ext.create('TSMINFO.store.StatusStore'),
-            //        queryMode: 'local',
-            //        valueField: 'value',
-            //        displayField: 'name'
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'numberfield',
-            //        name: 'pointx',
-            //        fieldLabel: "地图横坐标"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'numberfield',
-            //        name: 'pointy',
-            //        fieldLabel: "地图纵坐标"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'numberfield',
-            //        name: 'parentId',
-            //        fieldLabel: "父id"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'imgUrl',
-            //        fieldLabel: "单位图片路径"
-            //
-            //    }]
-            //}, {
-            //    items: [{
-            //        xtype: 'textfield',
-            //        name: 'createTime',
-            //        fieldLabel: "创建时间"
-            //
-            //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'firemenName',
+                //        fieldLabel: "消防负责人名称"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'firemenTel',
+                //        fieldLabel: "消防负责人电话"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'combobox',
+                //        name: 'status',
+                //        fieldLabel: "状态",
+                //        hiddenName: 'status',
+                //        editable: false,
+                //        forceSelection: false,
+                //        store: Ext.create('TSMINFO.store.StatusStore'),
+                //        queryMode: 'local',
+                //        valueField: 'value',
+                //        displayField: 'name'
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'numberfield',
+                //        name: 'pointx',
+                //        fieldLabel: "地图横坐标"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'numberfield',
+                //        name: 'pointy',
+                //        fieldLabel: "地图纵坐标"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'numberfield',
+                //        name: 'parentId',
+                //        fieldLabel: "父id"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'imgUrl',
+                //        fieldLabel: "单位图片路径"
+                //
+                //    }]
+                //}, {
+                //    items: [{
+                //        xtype: 'textfield',
+                //        name: 'createTime',
+                //        fieldLabel: "创建时间"
+                //
+                //    }]
             }, {
                 //layout
                 layout: {
@@ -380,11 +380,10 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
         });
         return this.grid;
     },
-
     createWindow: function (cfg) {
         var form = Ext.create('Ext.form.Panel', {
             border: false,
-            bodyStyle: 'padding:10px 0',
+            bodyStyle: 'padding:10px 10px',
             fieldDefaults: {
                 labelAlign: 'right',
                 labelWidth: 120,
@@ -495,15 +494,25 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
                 allowBlank: true
             }]
         });
-        var baiduMap = Ext.create('nanjingMap');
+        var baiduMap = Ext.create('nanjingMap', {
+            border: false,
+            bodyStyle: 'padding:10px 0',
+            height: 545,
+            width: 750
+        });
+
         var win = Ext.create('Ext.Window', {
             title: cfg.title,
+            resizable : false,
             width: 1200,
             modal: true,
-            layout: { type: 'hbox'},
+            layout: {
+                type: 'hbox',
+                align: 'top'
+            },
             buttons: [{
                 text: '确定',
-                    handler: function () {
+                handler: function () {
                     cfg.callback.call(this, form, win)
                 },
                 scope: this
@@ -514,10 +523,9 @@ Ext.define('TSMINFO.view.fire.orgmnt.OrgsView', {
                 }
             }],
             items: [form, baiduMap]
-        })
+        });
         return win;
     },
-
     addWin: function () {
         var win = this.createWindow({
             title: '新增单位管理',
